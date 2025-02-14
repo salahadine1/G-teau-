@@ -15,15 +15,17 @@ font-family: Arial, sans-serif;
 margin: 0;
  
 padding: 0;
+Background: #111;
 
 }
 
 
 header {
 
- border-bottom: 4px solid #666;
- top: 0; background-color: #000;
-
+ border-bottom: 2px solid #888;
+ top: 0; 
+ background-colorl: #000;
+Font-size: 3em; 
  color: #fff;
  padding: 20px;
 
@@ -42,8 +44,7 @@ list-style: none;
 
  display: flex;
 
- justify-content:
- space-between;
+ justify-content: space-between;
 
 }
 
@@ -67,15 +68,15 @@ nav a {
 section {
 
  padding: 20px;
-
+ Background: #222;
 }
 
 
 
 #gâteaux {
-
- background-color: #f7f7f7;
-
+Color: #fff;
+ background-color: #222;
+Border-top: 1px solid #777;
 }
 
 
@@ -86,6 +87,7 @@ section {
  flex-wrap: wrap;
 
  justify-content: center;
+ 
 }
 
 
@@ -93,7 +95,7 @@ section {
 
  margin: 20px;
 
- width: 200px;
+ width: 400px;
 
  
 }
@@ -103,7 +105,7 @@ section {
 
 .gâteau h2 {
 
- font-size: 18px;
+ Font-size: 2.2em;
 
  margin-top: 10px;
 
@@ -112,40 +114,17 @@ section {
 
 .gâteau p {
 
- font-size: 14px;
+ Font-size: 2em;
 
  margin-bottom: 10px;
 
 }
 
 
-button {
-
- background-color: #333;
-
- color: #fff;
-
- border: none;
-
- padding: 10px 20px;
-
- font-size: 16px;
-
- cursor: pointer;
-
-}
-
-
-button:hover {
-
- background-color: #555;
-
-}
-
 
 footer {
 
- background-color: #333;
+ background-color: #000;
 
  color: #fff;
 
@@ -154,17 +133,15 @@ footer {
  text-align: center;
 
  clear: both;
-
+ opacity: 0.5;
 }
 
 
 
 .container{
 
- 
- background: blue;
  width: 100%;
- max-width: 200px;
+ max-width: 450px;
  display: flex;
  padding: 10px;
  Overflow-X: auto;
@@ -173,17 +150,15 @@ footer {
    border-radius: 10px;
 
     position: relative;
-
+Height: 450px;
 }
 
 .item{
 
- flex: 0 0 100px;
+ flex: 0 0 400px;
  scroll-snap-align: star;
-
  margin-right: 10px;
   border-radius: 20px;
- background-color: green;
  color: white;
 
 }
@@ -192,9 +167,7 @@ footer {
 .item img{
    
  width: 100%;
-   
  height: 100%;
-
  border-radius: 10px;
  object-fit: cover;
 
@@ -210,18 +183,15 @@ footer {
 /* Style pour le formulaire */
 
  form {
-
- width: 50%;
-
+Width: 50%;
  margin: 40px auto;
-
- padding: 20px;
-
  border: 1px solid #ccc;
-
- border-radius: 10px;
-
+ border-radius: 15px;
  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ align-items: center;
+display: block;
+Padding: 30px;
+justify-content: columns;
 
  }
 
@@ -237,18 +207,15 @@ footer {
 
 textarea {
 
- width: 90%;
-
- height: 40px;
-
+ 
+Width: 95%;
  padding: 10px;
  margin-bottom: 20px;
-
+ margin-right: 10px;
+Font-size: 2em;
  border: 1px solid #ccc;
+Border-radius: 20px;
 
-align-text: center;
-display: flex;
-justify-content: center;
 }
  button {
 
@@ -264,10 +231,10 @@ justify-content: center;
 
  border: none;
 
- border-radius: 10px;
+ border-radius: 20px;
 
  cursor: pointer;
-
+Font-size: 2em;
  }
 
 
@@ -276,19 +243,85 @@ justify-content: center;
  background-color: #3e8e41;
 
  }
+a{
+    Text-decoration: none;
+    color: #fff;
+    
+}
+#accueil{
+    Background-image: url('gâteauChocolat.jpg');
+    Background-size: cover;
+    Background-position: 100%;
+}
+#contact{
+    Color:#fff;
+    Border-top: 1px solid #777;
+    
+}
+h1{
+    Font-size: 3.5em;
+    Text-shadow: 0px 0px 10px cyan, 0px 0px 20px cyan, 0px 0px 30px cyan;
+    Font-weight: bold;
+}
+Span{
+    Font-size: 18px;
+    Font-weight: bold;
+    
+}
+Span1{
+    Font-size: 1em;
+    Font-weight: bold;
+    Color: cyan;
+}
+h2 {
+    Color: yellow;
+    Font-size: 2em;
+}
+#panier{
+    Color: #fff;
+}
+#partager{
+ Width: 90%;
+ background-color: #4CAF50;
+
+ color: white;
+
+ padding: 10px;
+
+ border: none;
+Margin-left: 10px;
+ 
+
+ cursor: pointer;
+Width: 95%;
+ padding: 10px;
+ margin-bottom: 20px;
+ margin-right: 10px;
+Font-size: 2em;
+ 
+Border-radius: 20px;
+ }
 
 
+ #partager:hover {
+
+ background-color: #3e8e41;
+
+ 
+}
+P {
+    Font-size: 2em;
+}
 </style>
 
 </head>
 
 <body>
  
-<header>
+ <header>
  
 <nav>
- 
-<ul>
+ <ul>
 
  <li><a href="#accueil">Accueil</a></li>
 
@@ -304,47 +337,54 @@ justify-content: center;
 
  <section id="accueil">
 
- <h1>Bienvenue chez Gâteaux délicieux</h1>
+ <h1>Bienvenue chez Gâteaux délicieux ! </h1>
  
-<p>Nous proposons une variété de gâteaux délicieux pour tous les goûts et les occasions.</p>
+<p style="color: #fff; font-weight: bold; font-size:2em; text-shadow: 0px 0px 10px red, 0px 0px 20px red, 0px 0px 30px red;">Nous proposons une variété de gâteaux délicieux pour tous les goûts et les occasions.</p>
 
  </section>
  <section id="gâteaux">
 
  <h1>Nos gâteaux</h1>
- 
+ <hr>
 <div class="gâteaux">
 
  <div class="gâteau">
   
  <div class="container">
-       
- <div class="item">
- <img src="gâteauChocolat.jpg" alt="Gâteau au chocolat">
-
- </div>
- 
+     
+        
 <div class="item">
- <img src="gâteauChocolat1.jpg" alt="Gâteau au chocolat">
- 
-</div>
-
- <div class="item">
- <img src="gâteauChocolat2.jpg" alt="Gâteau au chocolat">
+ <img src="biscuit3.jpg" alt="biscuit">
 
  </div>
+       
+<div class="item">
+ <img src="biscuit.jpg" alt="biscuit">
 
  </div>
+        
+<div class="item">
+ <img src="biscuit1.jpg" alt="biscuit">
+
+ </div>
+       
+<div class="item">
+ <img src="biscuit2.jpg" alt="biscuit">
+
+ </div>
+ </div>
  
-<h2><a href="Chocolat.html">Gâteau au chocolat</a></h2>
+<h2>👉 Biscuit langue de chat</h2>
+ <br>
  
-<p>Un gâteau riche et délicieux au chocolat.</p>
+<p>des biscuits riches et délicieux.</p>
  
-<p>Prix : 0 CFA</p>
+<p><span>Prix :</span> <span1>À partir de 4000CFA</span1></p>
  
-<button>Ajouter au panier</button>
+
 
  
+<a href="https://wa.me/c/23791996594"><button>voir plus !</button></a> 
 
  </div>
  
@@ -352,28 +392,37 @@ justify-content: center;
 
  <div class="container">
 
+       
 <div class="item">
-<img src="gâteauFruit.jpg" alt="Gâteau au chocolat">
+ <img src="GâteauxM.jpg" alt="Gâteau ">
 
-</div>
-
+ </div>
  <div class="item">
-<img src="gâteauFruit.jpg" alt="Gâteau au chocolat">
+ <img src="GâteauxM1.jpg" alt="Gâteau ">
 
-</div>
-<div class="item">
-<img src="gâteauFruit.jpg" alt="Gâteau au chocolat">
+ </div>
+ <div class="item">
+ <img src="GâteauxM2.jpg" alt="Gâteau ">
 
-</div>
+ </div>
+ <div class="item">
+ <img src="GâteauxM3.jpg" alt="Gâteau ">
+
+ </div>
+  <div class="item">
+ <img src="gâteaux10.jpg" alt="Gâteau ">
+
+ </div>
  </div>
  
-<h2><a href="Fruit.html">Gâteau aux fruits</a></h2>
+<h2>👉 Marbré</h2>
+ <br>
+<p>Marbré léger et délicieux.</p>
  
-<p>Un gâteau léger et délicieux aux fruits.</p>
+<p><span>Prix :</span> <span1>À partir de 3000CFA</span1></p>
  
-<p>Prix : 0 CFA</p>
- 
-<button>Ajouter au panier</button>
+
+<a href="https://wa.me/c/23791996594"><button>voir plus !</button></a> 
 
  </div>
  
@@ -381,28 +430,58 @@ justify-content: center;
 
   <div class="container">
 
-<div class="item">
-<img src="gâteauVanille.jpg" alt="Gâteau au chocolat">
+ <div class="item">
+ <img src="gâteaux.jpg" alt="Gâteau ">
 
+ </div>
+ 
+<div class="item">
+ <img src="gâteaux1.jpg" alt="Gâteau ">
+ 
 </div>
 
  <div class="item">
-<img src="gâteauVanille1.jpg" alt="Gâteau au chocolat">
+ <img src="gâteaux2.jpg" alt="Gâteau ">
 
-</div>
-<div class="item">
-<img src="gâteauvanille.jpg" alt="Gâteau au chocolat">
+ </div>
+ <div class="item">
+ <img src="gâteaux3.jpg" alt="Gâteau ">
 
-</div>
+ </div>
+ <div class="item">
+ <img src="gâteaux4.jpg" alt="Gâteau ">
+
+ </div>
+ <div class="item">
+ <img src="gâteaux5.jpg" alt="Gâteau ">
+
+ </div>
+ <div class="item">
+ <img src="gâteaux6.jpg" alt="Gâteau ">
+
+ </div>
+ <div class="item">
+ <img src="gâteaux7.jpg" alt="Gâteau ">
+
+ </div>
+ <div class="item">
+ <img src="gâteaux8.jpg" alt="Gâteau ">
+
+ </div>
+ <div class="item">
+ <img src="gâteaux9.jpg" alt="Gâteau ">
+
  </div>
  
-<h2><a href="Vanille.html">Gâteau à la vanille</a></h2>
+ </div>
  
-<p>Un gâteau classique et délicieux à la vanille.</p>
+<h2>👉 Gâteau anniversaire, baptêmes et mariage.</h2>
  
-<p>Prix : 0 CFA</p>
+<p>Un gâteau classique et délicieux .</p>
  
-<button>Ajouter au panier</button>
+<p><span>Prix : </span> <span1>À partir de 5500CFA</span1></p>
+ 
+<a href="https://wa.me/c/23791996594"><button>voir plus !</button></a> 
  
 
 
@@ -412,17 +491,18 @@ justify-content: center;
   
 
  </section>
+  
 
  <section id="contact">
  
 <h1>Contact</h1>
-
+<hr>
  <p>Pour toute question ou commande, veuillez nous contacter à l'adresse suivante :
 </p>
  <p>gâteauxdélicieux@gmail.com</p>
- <p>Ou par téléphone au :
+ <p>Ou via WhatsApp :
 </p>
- <p>6 91 03 25 26</p>
+ 
 
  <form>
 
@@ -439,75 +519,19 @@ justify-content: center;
 
  </section>
  
-<section id="panier" class="masquer">
-
- <h1>Panier</h1>
- 
-<button id="fermer-panier">Fermer</button>
-
- <div id="contenu-panier">
-</div>
-
-</section>
  
 <footer>
 
- <p>&copy; 2025 Gâteaux délicieux</p>
+ <p>&copy; 2025 Gâteaux délicieux. Created by Salahadine.</p>
  
 </footer>
  
 <script>
-function ajouterAuPanier() {
+    
+  
+    
     
 
-    const gateau = document.querySelector('.gateau');
-
-    const nomGateau = gateau.querySelector('h2').textContent;
-
-    const prixGateau = gateau.querySelector('p:nth-child(3)').textContent;
-
-    const contenuPanier = document.querySelector('#contenu-panier');
-
-    contenuPanier.innerHTML += `<p>${nomGateau} - ${prixGateau}</p>`;
-
-    document.querySelector('#panier').classList.remove('masquer');
-}
-
-
-function fermerPanier() {
-
-    document.querySelector('#panier').classList.add('masquer');
-}
-
-document.querySelectorAll(".gâteau button").forEach((bouton) => {
-
-    bouton.addEventListener("click", function () {
-
-        let gateau = this.closest(".gâteau");
-
-        let nomGateau = gateau.querySelector("h2").textContent;
-
-        let prixGateau = gateau.querySelector("p:nth-of-type(2)").textContent;
-
-        
-        let contenuPanier = document.querySelector("#contenu-panier");
-
-        contenuPanier.innerHTML += `<p>${nomGateau} - ${prixGateau}</p>`;
-
-        
-        document.querySelector("#panier").classList.remove("masquer");
-
-        
-    });
-
-});
-
-
-document.querySelector("#fermer-panier").addEventListener("click", function () {
-
-    document.querySelector("#panier").classList.add("masquer");
-
-});
 
 
 // Récupération des éléments du formulaire
@@ -516,7 +540,7 @@ document.querySelector("#fermer-panier").addEventListener("click", function () {
 
  const nom = document.querySelector('#nom');
 
- const telephone = +237691032526;
+ const telephone = +237691996594 ;
 
  const message = document.querySelector('#message');
 
